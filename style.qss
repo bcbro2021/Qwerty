@@ -1,0 +1,91 @@
+QWidget {
+    background-color: #282c34;
+    color: #abb2bf;
+}
+QPlainTextEdit {
+    background-color: #1e2127;
+    color: #abb2bf;
+    border: 0px solid #444444;
+    border-radius:10px;
+    font-family: 'Courier New', Courier, monospace;
+    selection-background-color: #3E4451;  
+    selection-color: #abb2bf; 
+}
+QTreeView {
+    border: 0px;    
+}
+
+QTreeView::item:selected {
+    background-color: #363636;  /* Dark gray selection */
+    color: #abb2bf;  /* Light gray text */
+}
+
+QTreeView::item:hover {
+    background-color: #363636;  /* Blue selection when focused */
+    color: #ffffff;
+}
+
+QScrollBar:vertical {
+    border: none;
+    background: #282c34;  /* Dark background */
+    width: 10px;  /* Thin scrollbar */
+    margin: 0px 0px 0px 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #3e4451;  /* Subtle dark grey handle */
+    min-height: 20px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #5c6370;  /* Lighter grey on hover */
+}
+
+QScrollBar::handle:vertical:pressed {
+    background: #61afef;  /* Blue when pressed */
+}
+
+QScrollBar::add-line:vertical, 
+QScrollBar::sub-line:vertical {
+    background: none;
+    height: 0px;
+}
+
+QScrollBar::add-page:vertical, 
+QScrollBar::sub-page:vertical {
+    background: none;
+}
+
+/* Horizontal Scrollbar */
+QScrollBar:horizontal {
+    border: none;
+    background: #282c34;
+    height: 10px;
+    margin: 0px 0px 0px 0px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #3e4451;
+    min-width: 20px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: #5c6370;
+}
+
+QScrollBar::handle:horizontal:pressed {
+    background: #61afef;
+}
+
+QScrollBar::add-line:horizontal, 
+QScrollBar::sub-line:horizontal {
+    background: none;
+    width: 0px;
+}
+
+QScrollBar::add-page:horizontal, 
+QScrollBar::sub-page:horizontal {
+    background: none;
+}
